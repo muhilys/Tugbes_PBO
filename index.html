@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Reservasi Wisata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>WisataX</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#reservation">Reservasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Liburan Seru Dimulai di Sini</h2>
+            <p>Pilih destinasi wisata impianmu, tentukan tanggal, dan nikmati liburan yang tak terlupakan!</p>
+            <a href="#reservation" class="cta-button">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Pricelist (Daftar Harga) -->
+    <section id="pricelist" class="pricelist">
+        <div class="container">
+            <h3>Daftar Harga Destinasi Wisata</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destinasi</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bali</td>
+                        <td>Rp 3.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Yogyakarta</td>
+                        <td>Rp 2.500.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bandung</td>
+                        <td>Rp 1.800.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Form Reservasi -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h3>Reservasi Wisata</h3>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="destination">Destinasi Wisata</label>
+                    <select id="destination" name="destination" required>
+                        <option value="bali">Bali</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="bandung">Bandung</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Tanggal Kunjungan</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Jumlah Pengunjung</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Pesan Sekarang</button>
+            </form>
+
+            <!-- Pesan Konfirmasi -->
+            <div id="confirmationMessage" class="hidden">
+                <p>Reservasi berhasil! Kami akan menghubungi Anda segera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Kontak Kami</h3>
+            <p>Email: info@wisatax.com</p>
+            <p>Telepon: +62 123 456 789</p>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Tentang Kami</h3>
+            <p>WisataX memberikan pengalaman liburan yang menyenangkan dengan pilihan destinasi wisata terbaik di Indonesia. Kami memudahkan Anda untuk melakukan reservasi dan merencanakan perjalanan dengan mudah.</p>
+        </div>
+    </section>
+
+    <script src="javascript"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran - WisataX</title>
+    <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>WisataX</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section class="payment">
+        <div class="container">
+            <h3>Metode Pembayaran</h3>
+            <p>Pilih metode pembayaran Anda:</p>
+
+            <!-- Menampilkan rincian reservasi -->
+            <div class="reservation-details">
+                <p><strong>Destinasi:</strong> <span id="destinationName"></span></p>
+                <p><strong>Jumlah Pengunjung:</strong> <span id="guestsCount"></span> orang</p>
+                <p><strong>Total Harga:</strong> Rp <span id="totalPrice"></span></p>
+            </div>
+
+            <!-- Pilihan metode pembayaran -->
+            <div class="payment-options">
+                <button>Transfer Bank</button>
+                <button>GoPay</button>
+                <button>OVO</button>
+                <button>Dana</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WisataX. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
