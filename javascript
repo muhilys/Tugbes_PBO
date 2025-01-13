@@ -10,7 +10,6 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
         localStorage.setItem("destination", destination);
         localStorage.setItem("guests", guests);
 
-        // Tentukan harga per destinasi
         const harga = {
             bali: 1000000, // Harga untuk Bali
             yogyakarta: 750000, // Harga untuk Yogyakarta
@@ -19,7 +18,6 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
 
         localStorage.setItem("price", harga[destination] * guests);
 
-        // Alihkan ke halaman pembayaran.html
         window.location.href = "pembayaran.html";
     }
 });
