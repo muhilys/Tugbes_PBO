@@ -1,4 +1,3 @@
-// Mengambil data dari localStorage dan menampilkannya
 window.onload = function() {
     const destination = localStorage.getItem("destination");
     const guests = localStorage.getItem("guests");
